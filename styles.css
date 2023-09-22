@@ -1,0 +1,141 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    padding: 2rem;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    background-size: 100%;
+}
+
+header img {
+    width: 45%;
+    max-width: 185px;
+}
+
+.main-image img {
+    width: 95%;
+    max-width: 430px;
+    display: block;
+    margin: auto;
+}
+
+main {
+    margin-top: 3.5rem;
+}
+
+.heading {
+    margin-top: 4rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.02rem;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 1.3rem;
+    padding: 0.7rem 4.7rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    border: none;
+    background: white;
+    color: var(--violet);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 250ms;
+}
+
+button:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+footer {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+i {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+i:hover {
+    color: var(--soft-magenta);
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        display: flex;
+        height: 100vh;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .main-image {
+        width: 1500px;
+    }
+    
+    .main-image img {
+        max-width: 100%;
+    }
+
+    main { 
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    header img {
+         max-width: 250px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    button {
+        margin-left: 0;
+        padding: 1.3rem 3.5rem;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        margin-top: 0;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 5rem;
+    }
+
+    i {
+        font-size: 3rem;
+    }
+}
